@@ -1,0 +1,8 @@
+CREATE TABLE factura (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    fechaEmision DATE NOT NULL,
+    clienteNombre VARCHAR(100) NOT NULL,
+    DNI VARCHAR(20) NOT NULL UNIQUE,
+    total DECIMAL(10, 2) NOT NULL,
+    impuestos DECIMAL(10, 2) NOT NULL
+);
